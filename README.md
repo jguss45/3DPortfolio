@@ -1,3 +1,5 @@
 3DPortfolio
 
-Built using 
+
+
+Inspired by Javascript Mastery and https://ssahibsingh.github.io/
