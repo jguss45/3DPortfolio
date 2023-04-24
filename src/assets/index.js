@@ -20,6 +20,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import flask from "./tech/flask.png";
+import gcloud from "./tech/googlecloud.png";
+import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import streamlit from "./tech/streamlit.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -56,6 +61,11 @@ export {
   tailwind,
   typescript,
   threejs,
+  flask,
+  gcloud,
+  python,
+  sql,
+  streamlit,
   meta,
   shopify,
   starbucks,
