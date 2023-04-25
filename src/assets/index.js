@@ -26,18 +26,11 @@ import python from "./tech/python.png";
 import sql from "./tech/sql.png";
 import streamlit from "./tech/streamlit.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import purdue from "./company/purdue.png";
 import habit from "./company/habit.png";
 import hnm from "./company/h&m.png";
 import ecom from "./company/ecom.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import techstore from "./techstore.png";
 import kpidash from "./dashboard.png";
 import portfolio from "./portfolio.png";
@@ -69,17 +62,10 @@ export {
   python,
   sql,
   streamlit,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   purdue,
   habit,
   hnm,
   ecom,
-  carrent,
-  jobit,
-  tripguide,
   techstore,
   kpidash,
   portfolio,
