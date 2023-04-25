@@ -38,6 +38,9 @@ import ecom from "./company/ecom.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import techstore from "./techstore.png";
+import kpidash from "./dashboard.png";
+import portfolio from "./portfolio.png";
 
 export {
   logo,
@@ -77,4 +80,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  techstore,
+  kpidash,
+  portfolio,
+
 };

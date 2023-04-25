@@ -25,6 +25,9 @@ import {
     ecom,
     carrent,
     jobit,
+    techstore,
+    kpidash,
+    portfolio,
     tripguide,
     threejs,
     flask,
@@ -206,58 +209,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Tech Store",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to browse, add to cart, buy now, and check out using Stripe.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
           name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
           color: "green-text-gradient",
         },
         {
@@ -265,8 +226,50 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: techstore,
+      source_code_link: "https://github.com/jguss45/react_ecommerce_app",
+    },
+    {
+      name: "H&M KPI Dashboard",
+      description:
+        "Streamlit dashboard with interactive charts, filters, and sidebar enabling monitoring and analysis of KPIs.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "green-text-gradient",
+        },
+        {
+          name: "streamlit",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: kpidash,
+      source_code_link: "https://github.com/jguss45/KPI_Dashboard",
+    },
+    {
+      name: "3D Portfolio Website",
+      description:
+        "Portfolio website showcasing my experience and brought to life with 3D graphics and animations.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio,
+      source_code_link: "https://github.com/jguss45/3DPortfolio",
     },
   ];
   
