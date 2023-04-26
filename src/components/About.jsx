@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       > 
-      Hi, I'm Joseph Guss, a software developer with solid experience in JavaScript frameworks like React and Node.js, as well as Python for building RESTful APIs and informative dashboards using Streamlit. I am passionate about collaborating with others to develop efficient, scalable, and user-friendly solutions that solve real-world problems. With a proven track record of quickly learning new technologies, I am confident that I can bring your vision to life.
+        Hi I'm Joseph Guss, a software developer with solid experience in React, Node.js, and Python. I'm passionate about collaborating with others to create efficient, scalable, and user-friendly solutions that solve real-world problems. With a proven track record of quickly learning new technologies, I'm confident that I can bring your vision to life.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

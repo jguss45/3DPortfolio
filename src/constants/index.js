@@ -51,15 +51,15 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "React Native Developer",
+      icon: mobile,
+    },
+    {
+      title: "Full Stack Developer",
       icon: creator,
     },
   ];
@@ -94,14 +94,6 @@ import {
       icon: threejs,
     },
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -125,7 +117,7 @@ import {
   
   const experiences = [
     {
-      title: "Backend Engineer",
+      title: "Backend Developer",
       company_name: "P2P Warehouse Marketplace",
       icon: purdue,
       iconBg: "#383E56",
@@ -137,7 +129,7 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
+      title: "React Native Developer",
       company_name: "Habit Tracking Mobile App",
       icon: habit,
       iconBg: "#E6DEDD",
