@@ -4,6 +4,7 @@ import { styles } from "../styles"
 import { staggerContainer } from "../utils/motion"
 
 //this higher order component will serve to provide formatting and animation features to various components
+//id only needs to be provided to navigate to the specific section
 const SectionWrapper = (Component, idName) => 
     function HOC() {
         return (
