@@ -7,3 +7,5 @@ Technologies used to build this project
 -React.js
 -TailwindCSS
 -Framer Motion
+
+Currently live at josephguss.com 
