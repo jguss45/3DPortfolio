@@ -11,7 +11,7 @@ const ServiceCard = ( { index, title, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div 
-        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)} 
+        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)} //fade in toward right, spring animation, each card appears after a half second
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div
@@ -41,7 +41,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       > 
-        Hi I'm Joseph Guss, a software developer with solid experience in React, Node.js, and Python. I'm passionate about collaborating with others to create efficient, scalable, and user-friendly solutions that solve real-world problems. With a proven track record of quickly learning new technologies, I'm confident that I can bring your vision to life.
+        I am a software developer with diverse experience in React, Node.js, and Python. 
+        I seek out opportunities to collaborate with others to create efficient, scalable, and user-friendly solutions. 
+        Moreso, I enjoy using my creativity, adaptive learning style, and passion for cutting edge technologies to solve complex problems. 
+        Together, I am confident that we can bring your vision to life.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -53,4 +56,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");

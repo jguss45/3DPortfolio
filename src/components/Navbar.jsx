@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; //link triggers change to browser's url w/o full page refresh. Url change then leads to BrowserRouter render
 
 import { styles } from '../styles'; 
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
-  const [active, setActive] = useState('')
-  const [toggle, setToggle] = useState(false)
+  const [active, setActive] = useState(''); //used to show user which component they nav to if they click through nav bar
+  const [toggle, setToggle] = useState(false); //used to toggle hamburger nav bar open and close on small devices
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <span className='sm:block hidden'>| &nbsp;Developer Portfolio</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((link) => (
+          {navLinks.map((link) => (//use an <a> tag here vs <Link> as we don't want entire section as clickable link, only the specific <li> elements
             <li
               key={link.id}
               className={`${
@@ -36,14 +36,14 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
               >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a> 
             </li>
-          ))}
+          ))} 
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'> 
           <img 
-            src={toggle ? close : menu}
+            src={toggle ? close : menu} //if toggle set to true, then img is 'close' icon, if false then 'open' hamburger icon
             alt='menu'
             className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)} 
@@ -59,7 +59,7 @@ const Navbar = () => {
                       ? "text-white"
                       : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
+                  onClick={() => { 
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
@@ -75,4 +75,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
