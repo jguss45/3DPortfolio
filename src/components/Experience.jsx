@@ -8,6 +8,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+//here we map over the experiences, and each is rendered as a <VerticalTimelineElement> inside the ExperienceCard function
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement 
     contentStyle={{ background: '#1d1836', color: '#fff'}}
@@ -58,7 +59,7 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default SectionWrapper(Experience, "work");

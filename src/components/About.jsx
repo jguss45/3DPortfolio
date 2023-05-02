@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       > 
-        I am a software developer with diverse experience in React, Node.js, and Python. 
+        Hi I'm Joseph Guss! I am a software developer with diverse experience in React, Node.js, and Python. 
         I seek out opportunities to collaborate with others to create efficient, scalable, and user-friendly solutions. 
         Moreso, I enjoy using my creativity, adaptive learning style, and passion for cutting edge technologies to solve complex problems. 
         Together, I am confident that we can bring your vision to life.
