@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser';
+import validator from 'validator';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -11,7 +12,11 @@ const Contact = () => {
   const formRef = useRef(); //create ref object to reference the form
   const [form, setForm] = useState({
     name: "",
-    email: "",
+    email: {
+      value: "",
+      error: false,
+      errorMsg: "",
+    },
     message: "",
   }); //for resetting the form 
   
@@ -21,14 +26,41 @@ const Contact = () => {
     //for updating the form state anytime there is a change in the form fields
     const { name, value } = e.target;
 
-    setForm({ 
-      ...form, 
-      [name]: value,
-    });
+    //Validate email on change to 'email' form field
+    if (name === "email") {
+      const isValidEmail = validator.isEmail(value);
+      setForm({
+        ...form,
+        email: {
+          value: value,
+          error: !isValidEmail,
+          errorMsg: isValidEmail ? "" : "Please enter a valid email address",
+        },
+      });
+    } else {
+      setForm({ 
+        ...form, 
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault(); //prevent form submission from causing a page refresh
+    //check valid email before submitting
+    const isValidEmail = validator.isEmail(form.email.value);
+    if(!isValidEmail) {
+      setForm({
+        ...form,
+        email: {
+          ...form.email,
+          error: true,
+          errorMsg: "Please enter a valid email address and try again",
+        },
+      });
+      return;
+    }
+
     setLoading(true); //show 'sending'
 
     emailjs
@@ -38,7 +70,7 @@ const Contact = () => {
         {
           from_name: form.name,
           to_name: "Joseph",
-          from_email: form.email,
+          from_email: form.email.value,
           to_email: "joeguss45@aol.com",
           message: form.message,
         },
@@ -51,7 +83,11 @@ const Contact = () => {
 
           setForm({
             name: "",
-            email: "",
+            email: {
+              value: "",
+              error: false,
+              errorMsg: "",
+            },
             message: "",
           }); //if successful we alert user and then reset the form
         }, 
@@ -93,7 +129,7 @@ const Contact = () => {
             <input 
               type='email'
               name='email'
-              value={form.email}
+              value={form.email.value}
               onChange={handleChange}
               placeholder="What's your email?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
