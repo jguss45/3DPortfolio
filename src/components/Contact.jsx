@@ -8,16 +8,17 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef(); //create ref object to reference the form
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
-  });
+  }); //for resetting the form 
   
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false); //to show user 'sending' or not after they submit
 
   const handleChange = (e) => {
+    //for updating the form state anytime there is a change in the form fields
     const { name, value } = e.target;
 
     setForm({ 
@@ -27,8 +28,8 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+    e.preventDefault(); //prevent form submission from causing a page refresh
+    setLoading(true); //show 'sending'
 
     emailjs
       .send(
@@ -52,14 +53,14 @@ const Contact = () => {
             name: "",
             email: "",
             message: "",
-          });
+          }); //if successful we alert user and then reset the form
         }, 
         (error) => {
           setLoading(false)
           console.log(error);
 
           alert('Something went wrong.')
-      });
+      }); //if error we alert user but don't reset form
   };
 
   return (
@@ -129,4 +130,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "contact")
+export default SectionWrapper(Contact, "contact");

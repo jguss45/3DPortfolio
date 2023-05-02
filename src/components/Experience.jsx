@@ -44,7 +44,7 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
-  return (
+  return ( //we use <> here as JSX must have a single parent element. and we don't use <div> to not add unnecessary DOM element
     <>
       <motion.div variants={textVariant()}> 
         <p className={styles.sectionSubText}>What I have done so far</p>

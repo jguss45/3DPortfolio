@@ -8,6 +8,7 @@ import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
 //good future add: copy github icon div and refactor to be link straight to deployed project
+// below we destructure the project props for easier development
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -79,6 +80,7 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
+          //here we pass index for sequential fadeIn feature, then spread rest of project props
           <ProjectCard 
             key={`project-${index}`}
             index={index}
