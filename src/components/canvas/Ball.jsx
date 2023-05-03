@@ -29,8 +29,8 @@ const Ball = (props) => {
         />
       </mesh>
     </Float>
-  )
-}
+  );
+};
 
 const BallCanvas = ({ icon }) => {
   return (
@@ -46,7 +46,7 @@ const BallCanvas = ({ icon }) => {
 
       <Preload all />
     </Canvas>
-  )
-}
+  );
+};
 
 export default BallCanvas;

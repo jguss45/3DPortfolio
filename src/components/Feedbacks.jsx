@@ -1,9 +1,9 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-import { styles } from "../styles"
-import { SectionWrapper } from "../hoc"
-import { fadeIn, textVariant } from "../utils/motion"
-import { testimonials } from "../constants"
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import { testimonials } from "../constants";
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
   <motion.div
@@ -35,7 +35,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 
     
   </motion.div>
-)
+);
 
 const Feedbacks = () => {
   return (
@@ -56,7 +56,7 @@ const Feedbacks = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Feedbacks, "")
+export default SectionWrapper(Feedbacks, "");

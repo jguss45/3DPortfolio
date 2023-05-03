@@ -1,12 +1,12 @@
 3D Portfolio Website Using React.js and Three.js
 
-I created this portfolio website both to help showcase my experience as well as practice with incorporating 3D graphics and animations using three.js.
+I created this portfolio website both to help showcase my experience as well as practice with incorporating 3D graphics and animations using Three.js.
 
-Technologies used to build this project were 
-Three.js, 
+Technologies used to build this project include
 React.js, 
-TailwindCSS, 
+Three.js,  
 Framer Motion, 
-React Three Fiber
+React Three Fiber,
+TailwindCSS
 
-Currently live at josephguss.com 
+Website is currently live at josephguss.com 
