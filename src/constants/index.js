@@ -19,9 +19,11 @@ import {
     habit,
     hnm,
     ecom,
+    tshirt,
     techstore,
     kpidash,
     portfolio,
+    tshirtdesigner,
     threejs,
     flask,
     gcloud,
@@ -163,6 +165,18 @@ import {
         "Integrated Stripe checkout for secure and efficient payment processing",
       ],
     },
+    {
+      title: "Full stack Developer",
+      company_name: "AI Powered T-Shirt Designer",
+      icon: tshirt,
+      iconBg: "#383E56",
+      date: "May 2023",
+      points: [
+        "Created web application using React, Threejs, Express, and Tailwind CSS",
+        "Features include adding custom color, file upload, and a prompt for AI generation",
+        "Express backend server makes API calls to OpenAI's DALL-E API in response to user actions on the frontend",
+      ],
+    },
   ];
   
   const testimonials = [
@@ -234,6 +248,27 @@ import {
       ],
       image: kpidash,
       source_code_link: "https://github.com/jguss45/KPI_Dashboard",
+    },
+    {
+      name: "AI T-Shirt Designer",
+      description:
+        "Web app allowing users to design custom t-shirts in 3D, with the optional help of artificial intelligence using OpenAI's DALL-E API.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tshirtdesigner,
+      source_code_link: "https://github.com/jguss45/tshirtAIDesigner",
     },
     {
       name: "3D Portfolio Website",

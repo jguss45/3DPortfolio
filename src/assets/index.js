@@ -30,10 +30,12 @@ import purdue from "./company/purdue.png";
 import habit from "./company/habit.png";
 import hnm from "./company/h&m.png";
 import ecom from "./company/ecom.png";
+import tshirt from "./company/tshirt.png";
 
 import techstore from "./techstore.png";
 import kpidash from "./dashboard.png";
 import portfolio from "./portfolio.png";
+import tshirtdesigner from "./tshirtdesigner.png";
 
 export {
   logo,
@@ -66,8 +68,9 @@ export {
   habit,
   hnm,
   ecom,
+  tshirt,
   techstore,
   kpidash,
   portfolio,
-
+  tshirtdesigner,
 };
