@@ -213,7 +213,7 @@ import {
         "Web-based platform that allows users to browse, add to cart, buy now, and check out using Stripe.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
