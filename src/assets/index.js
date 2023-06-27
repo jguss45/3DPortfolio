@@ -31,11 +31,13 @@ import habit from "./company/habit.png";
 import hnm from "./company/h&m.png";
 import ecom from "./company/ecom.png";
 import tshirt from "./company/tshirt.png";
+import mealplanicon from "./company/mealplanicon.jpg";
 
 import techstore from "./techstore.png";
 import kpidash from "./dashboard.png";
 import portfolio from "./portfolio.png";
 import tshirtdesigner from "./tshirtdesigner.png";
+import mealplanai from "./mealplanai.PNG";
 
 export {
   logo,
@@ -69,8 +71,10 @@ export {
   hnm,
   ecom,
   tshirt,
+  mealplanicon,
   techstore,
   kpidash,
   portfolio,
   tshirtdesigner,
+  mealplanai,
 };

@@ -20,10 +20,12 @@ import {
     hnm,
     ecom,
     tshirt,
+    mealplanicon,
     techstore,
     kpidash,
     portfolio,
     tshirtdesigner,
+    mealplanai,
     threejs,
     flask,
     gcloud,
@@ -177,6 +179,18 @@ import {
         "Express backend server makes API calls to OpenAI's DALL-E API in response to user actions on the frontend",
       ],
     },
+    {
+      title: "Full stack Developer",
+      company_name: "Meal Genius",
+      icon: mealplanicon,
+      iconBg: "#383E56",
+      date: "June 2023",
+      points: [
+        "Created web application using React, Threejs, Express, and Tailwind CSS",
+        "Features include entering caloric or macro requirements, item exclusion, meals per day, and food preferences",
+        "Express backend server makes API calls to OpenAI's gpt-3.5-turbo API when the user submits their preferences",
+      ],
+    },
   ];
   
   const testimonials = [
@@ -207,6 +221,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Meal Genius",
+      description:
+        "Web-based platform that allows users to create a custom designed meal plan in seconds using AI.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mealplanai,
+      source_code_link: "https://github.com/jguss45/MealPlanAI",
+    },
     {
       name: "Tech Store",
       description:
@@ -290,6 +325,27 @@ import {
       ],
       image: portfolio,
       source_code_link: "https://github.com/jguss45/3DPortfolio",
+    },
+    {
+      name: "Meal Genius",
+      description:
+        "Web-based platform that allows users to create custom designed meal plan using AI in seconds.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mealplanai,
+      source_code_link: "https://github.com/jguss45/MealPlanAI",
     },
   ];
   
