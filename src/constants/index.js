@@ -326,27 +326,6 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/jguss45/3DPortfolio",
     },
-    {
-      name: "Meal Genius",
-      description:
-        "Web-based platform that allows users to create custom designed meal plan using AI in seconds.",
-      tags: [
-        {
-          name: "reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "green-text-gradient",
-        },
-        {
-          name: "express",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: mealplanai,
-      source_code_link: "https://github.com/jguss45/MealPlanAI",
-    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
